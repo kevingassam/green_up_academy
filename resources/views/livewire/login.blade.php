@@ -42,6 +42,9 @@
         <div class="row">
             <button type="submit">
                 Connexion
+                <span wire:loading>
+                    <img src="/assets/img/loading.gif"  alt="loading" height="20" width="20">
+                </span>
             </button>
         </div>
     </div>

@@ -32,6 +32,18 @@
             @enderror
         </div>
     </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12">
+            <div class="form-group">
+                <i class="fas fa-envelope-open"></i>
+                <input class="form-control" placeholder="Confirmation de l'email*" type="email" required
+                    wire:model="email2">
+            </div>
+            @error('email2')
+                <span class="text-danger small">{{ $message }}</span>
+            @enderror
+        </div>
+    </div>
     @if (session()->has('success'))
         <div class="alert alert-success">
             {{ session('success') }}
@@ -46,6 +58,9 @@
         <div class="row">
             <button type="submit">
                 M"inscrire
+                <span wire:loading>
+                    <img src="/assets/img/loading.gif"  alt="loading" height="20" width="20">
+                </span>
             </button>
         </div>
     </div>

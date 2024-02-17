@@ -156,6 +156,9 @@
             <button type="submit" class="btn btn-sm btn-gradient">
                 <i class="fa fa-paper-plane"></i>
                 Envoyer mon dossier
+                <span wire:loading>
+                    <img src="/assets/img/loading.gif"  alt="loading" height="20" width="20">
+                </span>
             </button>
         </div>
     </form>

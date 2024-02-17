@@ -70,6 +70,9 @@
         <div class="text-center">
             <button type="submit" class="btn  btn-primary">
                 Enregistrer
+                <span wire:loading>
+                    <img src="/assets/img/loading.gif"  alt="loading" height="20" width="20">
+                </span>
             </button>
         </div>
     </form>

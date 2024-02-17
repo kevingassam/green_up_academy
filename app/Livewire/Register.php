@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Mail;
 
 class Register extends Component
 {
-    public $nom, $prenom, $email;
+    public $nom, $prenom, $email,$email2;
     public function render()
     {
         return view('livewire.register');
@@ -21,12 +21,14 @@ class Register extends Component
         'nom' => 'required|max:20',
         'prenom' => 'required|max:20',
         'email' => 'required|email|unique:users',
+        'email2' => 'required|same:email',
 
     ];
 
     public function save()
     {
         $this->validate();
+
 
         $lastUserId = User::latest()->value('id');
         $count = User::count();
@@ -58,6 +60,6 @@ class Register extends Component
         session()->flash("success", "Votre compte a bient été ajouté, vous avez recu vos identifiants par mail");
 
         //reset form
-        $this->reset(['nom', 'prenom', 'email']);
+        $this->reset(['nom', 'prenom', 'email','email2']);
     }
 }
