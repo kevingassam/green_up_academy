@@ -27,7 +27,7 @@
         <!-- Bootstrap Table with Header - Dark -->
         <div >
 
-                @livewire('Televerseradmin')
+                @livewire('TeleverserAdmin')
 
         </div>
         <!--/ Bootstrap Table with Header Dark -->

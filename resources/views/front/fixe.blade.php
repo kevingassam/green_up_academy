@@ -231,8 +231,8 @@
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
-                        <p>&copy; 2024. All Rights Reserved.Make by <a href="kevin-gassam.com">KG Agency</a></p>
+                    <div class="col-lg-6 small">
+                        <p>&copy; 2024. All Rights Reserved.Make by <a href="https://kevin-gassam.com">KG Agency</a></p>
                     </div>
                     <div class="col-lg-6 text-right link">
                         {{-- <ul>
