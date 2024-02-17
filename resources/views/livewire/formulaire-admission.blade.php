@@ -153,15 +153,10 @@
         @endif
         <br>
         <div class="row">
-            <div class="col">
-                <button type="submit" class="btn btn-sm btn-gradient">
-                    <i class="fa fa-paper-plane"></i>
-                    Envoyer mon dossier
-                </button>
-            </div>
-            <div class="col my-auto">
-
-            </div>
+            <button type="submit" class="btn btn-sm btn-gradient">
+                <i class="fa fa-paper-plane"></i>
+                Envoyer mon dossier
+            </button>
         </div>
     </form>
 

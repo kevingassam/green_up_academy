@@ -74,6 +74,7 @@
                                     @if ($formation->document)
                                         <button class="btn btn-sm btn-gradient"
                                             onclick="document.location.href='{{ Storage::url($formation->document) }}'">
+                                            <i class="fa fa-download"></i>
                                             Télécharger la fiche de cette formation
                                         </button>
                                     @endif
