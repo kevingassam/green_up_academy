@@ -55,7 +55,7 @@
                             <div class="blog-item-box">
                                 <!-- Start Post Thumb -->
                                 <div class="thumb">
-                                    <img src="{{ Storage::url($formation->couverture) }}" alt="Thumb">
+                                    <img src="{{ Storage::url($formation->couverture) }}" alt="Thumb" style="width: 100% !important">
                                 </div>
                                 <!-- Start Post Thumb -->
 
