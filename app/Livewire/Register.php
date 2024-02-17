@@ -29,6 +29,7 @@ class Register extends Component
         $this->validate();
 
         $lastUserId = User::latest()->value('id');
+        $count = User::count();
         $userId = $lastUserId ? $lastUserId + 1 : 1;
 
         // Générer le code
@@ -43,7 +44,13 @@ class Register extends Component
         $password = Str::random(11);
         $user->password = Hash::make($password);
         $user->save();
-        $user->assignRole('user');
+        //verifier si cest le premier utilisateur
+        if ($count == 0) {
+            $user->assignRole('admin');
+        } else {
+            $user->assignRole('user');
+        }
+
 
 
         //envoyer le mail avec le mot de passe
