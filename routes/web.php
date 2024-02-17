@@ -30,9 +30,9 @@ Route::get('/about', function () {
 Route::get('/reglement', function () {
     return view('front.reglement');
 });
-Route::get('/campus', function () {
+/* Route::get('/campus', function () {
     return view('front.campus');
-});
+}); */
 Route::get('/contact', function () {
     return view('front.contact');
 });
