@@ -40,7 +40,7 @@
 
 </head>
 
-<body class="bg-gradient">
+<body >
 
     <!-- Start Register
     ============================================= -->
@@ -67,6 +67,14 @@
         </div>
     </div>
     <!-- End Register -->
+
+
+    <style>
+        body{
+            background: url('/assets/img/jeune-stage.jpg')no-repeat;
+            background-size: cover;
+        }
+    </style>
 
     <!-- jQuery Frameworks
     ============================================= -->

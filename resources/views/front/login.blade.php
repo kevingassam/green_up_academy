@@ -40,7 +40,7 @@
 
 </head>
 
-<body class="bg-gradient">
+<body >
 
     <!-- Start Login
     ============================================= -->
@@ -67,6 +67,14 @@
         </div>
     </div>
     <!-- End Login -->
+
+
+    <style>
+        body{
+            background: url('/assets/img/jeune-stage1.jpg')no-repeat;
+            background-size: cover;
+        }
+    </style>
 
     <!-- jQuery Frameworks
     ============================================= -->
